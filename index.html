@@ -2,41 +2,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SomnoBand NeuroAlign</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-blue-900 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">SomnoBand NeuroAlign</h1>
+<body>
+  <header>
+    <h1>SomnoBand NeuroAlign</h1>
     <p>Tecnología inteligente para un sueño saludable</p>
   </header>
-  <main class="p-6 max-w-4xl mx-auto space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Funcionamiento del Dispositivo</h2>
-      <img src="img/device.jpg" alt="Dispositivo SomnoBand" class="rounded shadow mb-4">
-      <ul class="list-disc pl-5 space-y-2">
-        <li><strong>Colocación:</strong> Cinturón con sensores y electrodos.</li>
-        <li><strong>Monitorización:</strong> IA para detectar apneas.</li>
-        <li><strong>Estimulación:</strong> Pulsos eléctricos suaves.</li>
-        <li><strong>Personalización:</strong> App con datos y ajustes.</li>
-      </ul>
-    </section>
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Servicios en Línea</h2>
-      <img src="img/telemedicine.jpg" alt="Telemedicina" class="rounded shadow mb-4">
-      <ul class="list-disc pl-5 space-y-2">
-        <li>Gestión de citas</li>
-        <li>Consulta de resultados</li>
-        <li>Soporte técnico</li>
-        <li>Monitoreo continuo</li>
-        <li>Telemedicina</li>
-      </ul>
-    </section>
-  </main>
-  <footer class="bg-blue-900 text-white text-center p-4 mt-10">
-    &copy; 2025 SomnoBand NeuroAlign. Todos los derechos reservados.
+  <nav>
+    <a href="#funcionamiento">Funcionamiento</a>
+    <a href="#componentes">Componentes</a>
+    <a href="#ventajas">Ventajas</a>
+    <a href="#estado">Estado Técnico</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <section id="funcionamiento">
+    <h2>Funcionamiento del Dispositivo</h2>
+    <img src="img/device.png" alt="Dispositivo SomnoBand" class="banner">
+    <h3>1. Colocación antes de dormir</h3>
+    <p>El usuario se coloca el cinturón torácico alrededor del pecho. Este incluye electrodos estratégicos y sensores que miden respiración, oxigenación y ritmo cardíaco.</p>
+    <h3>2. Monitorización continua del sueño</h3>
+    <p>Detecta patrones respiratorios, mide SpO2 y usa IA para identificar apneas o hipopneas.</p>
+    <h3>3. Activación de la estimulación</h3>
+    <p>Se activa una estimulación suave sobre nervios que abren la vía aérea, sin interrumpir el sueño.</p>
+    <h3>4. Mantenimiento del sueño natural</h3>
+    <p>Estimulación adaptativa, silenciosa y no molesta.</p>
+    <h3>5. Datos y personalización</h3>
+    <p>Estadísticas del sueño y recomendaciones personalizadas en la app móvil.</p>
+  </section>
+  <section id="componentes">
+    <h2>Componentes Principales</h2>
+    <ul>
+      <li>Cinturón ergonómico transpirable</li>
+      <li>Electrodos de estimulación</li>
+      <li>Sensores de respiración, oximetría y ECG</li>
+      <li>Unidad de control con IA</li>
+      <li>App móvil para configuración y análisis</li>
+    </ul>
+  </section>
+  <section id="ventajas">
+    <h2>Ventajas Potenciales</h2>
+    <ul>
+      <li>No invasivo, sin presión oral o nasal</li>
+      <li>Personalizable según el usuario</li>
+      <li>Sin cirugía ni incomodidades</li>
+      <li>Fácil uso y mantenimiento</li>
+      <li>Ideal para viajes</li>
+    </ul>
+  </section>
+  <section id="estado">
+    <h2>Estado de la Técnica y Originalidad</h2>
+    <p>Existen dispositivos similares pero invasivos. SomnoBand ofrece una alternativa transcutánea, portátil y no explorada, ideal para llenar un vacío tecnológico actual.</p>
+  </section>
+  <section id="servicios">
+    <h2>Servicios en Línea</h2>
+    <ul>
+      <li><strong>Gestión de Citas:</strong> Agenda tu cita con nuestros especialistas.</li>
+      <li><strong>Consulta de Resultados:</strong> Accede a tus análisis de sueño y recomendaciones.</li>
+      <li><strong>Atención al Paciente:</strong> Soporte técnico y consultas médicas personalizadas.</li>
+      <li><strong>Monitoreo Continuo:</strong> Revisión semanal de tu progreso desde la app.</li>
+      <li><strong>Telemedicina:</strong> Videollamadas con especialistas del sueño.</li>
+    </ul>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="servicio">Servicio solicitado:</label>
+      <select id="servicio" name="servicio">
+        <option value="consulta">Consulta Médica</option>
+        <option value="soporte">Soporte Técnico</option>
+        <option value="reporte">Resultados del Dispositivo</option>
+      </select>
+      <label for="mensaje">Mensaje adicional:</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <ul>
+      <li>📞 Teléfono: +34 600 123 456</li>
+      <li>✉️ Email: info@noctacare.com</li>
+      <li>📍 Dirección: Calle Innovación 22, Madrid, España</li>
+    </ul>
+  </section>
+  <footer>
+    <p>&copy; 2025 SomnoBand NeuroAlign. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
